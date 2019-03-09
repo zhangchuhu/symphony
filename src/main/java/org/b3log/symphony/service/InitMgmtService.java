@@ -641,6 +641,7 @@ public class InitMgmtService {
             LOGGER.info("Initialized admin user");
 
             // Add tags
+            /*
             String tagTitle = Symphonys.get("systemAnnounce");
             String tagId = tagMgmtService.addTag(adminId, tagTitle);
             JSONObject tag = tagRepository.get(tagId);
@@ -691,8 +692,9 @@ public class InitMgmtService {
             tagMgmtService.updateTag(tagId, tag);
 
             LOGGER.log(Level.INFO, "Initialized tag data");
-
+            */
             // Hello World!
+            /*
             final JSONObject article = new JSONObject();
             article.put(Article.ARTICLE_TITLE, "Welcome to Sym community :gift_heart:");
             article.put(Article.ARTICLE_TAGS, "Sym,Announcement");
@@ -703,6 +705,7 @@ public class InitMgmtService {
             articleMgmtService.addArticle(article);
 
             LOGGER.info("Initialized Sym, have fun!");
+            */
         } catch (final Exception e) {
             LOGGER.log(Level.ERROR, "Initializes Sym failed", e);
 
