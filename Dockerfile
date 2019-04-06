@@ -34,7 +34,7 @@ RUN tar zxvf apache-maven-3.5.2-bin.tar.gz && mv /apache-maven-3.5.2 /maven
 
 RUN git clone https://git.oschina.net/dl88250/symphony /sym
 # 需要修改成真实ip
-RUN cd /sym && sed -i 's/localhost/your ip/g' src/main/resources/latke.properties && sed -i 's/8080/80/g' src/main/resources/latke.properties && /maven/bin/mvn package -Dmaven.test.skip=true
+RUN cd /sym && sed -i 's/localhost/39.108.166.197/g' src/main/resources/latke.properties && sed -i 's/8080/80/g' src/main/resources/latke.properties && /maven/bin/mvn package -Dmaven.test.skip=true
 
 RUN mv /sym/target/symphony.war /jetty/webapps/ROOT.war
 

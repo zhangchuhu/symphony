@@ -87,7 +87,6 @@
                     </div>
                 </div>
             </div>
-            <!--
             <div class="index__bottom">
                 <div class="wrapper">
                     <div class="fn-flex-1">
@@ -213,7 +212,6 @@
             </div>
         </div>
     </div>
-        -->
     <#include "footer.ftl">
     <script src="${staticServePath}/js/channel${miniPostfix}.js?${staticResourceVersion}"></script>
     <script type="text/javascript">
